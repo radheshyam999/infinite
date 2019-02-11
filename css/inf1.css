@@ -1,0 +1,65 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  #loader{
+  position: absolute;
+  background-position-y: center;
+  background-position-x: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  #loader{
+  position: absolute;
+  background-position-y: center;
+  background-position-x: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  #loader{
+  position: absolute;
+  background-position-y: center;
+  background-position-x: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+  #loader{
+  position: absolute;
+  background-position-y: center;
+  background-position-x: center;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+#loader{
+position: absolute;
+top: 43%;
+left:43%;
+}
+
+}
+
+#footer {
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(5, 16, 54);
+   color: rgb(95, 18, 18);
+   text-align: center;
+   opacity: 0.5;
+
+}
+
