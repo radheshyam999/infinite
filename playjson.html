@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>3 Kings</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            --main-bg-color: black;
+            --star-color: solid yellow;
+        }
+
+        #scene {
+            width: 600px;
+            height: 400px;
+            background-color: var(--main-bg-color);
+        }
+
+        #threeKings {
+            width: 330px;
+        }
+
+        .animate {
+            -webkit-animation: toright 4s infinite;
+            animation: toright 4s infinite;
+        }
+
+        .float_left {
+            float: left;
+        }
+
+        .pos_abs {
+            position: absolute;
+        }
+
+        .crown_left {
+            margin-left: 10px;
+            margin-top: -20px;
+            border-top: 10px solid transparent;
+            border-left: 10px solid orange;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid orange;
+        }
+
+        .flip_2_right {
+            margin-left: 20px;
+            -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+        }
+
+        .crown_side_color {
+            border-left: 10px solid red;
+            border-bottom: 10px solid red;
+        }
+
+        .crown_middle {
+            margin-left: 15px;
+            margin-top: -20px;
+            border-top: 0px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 15px solid orange;
+        }
+
+        #kmiddle2 {
+            border-bottom: 15px solid red;
+        }
+
+        .king {
+            position: relative;
+            top: 39px;
+        }
+
+        #myKing2 {
+            left: 40px;
+        }
+
+        #myKing3 {
+            left: 80px;
+        }
+
+        .king_head {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            margin-left: 13px;
+            z-index: 20;
+            background: grey;
+        }
+
+        #myKing2Head {
+            background: brown;
+        }
+
+        .king_clothes {
+            width: 0;
+            top: 15px;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid green;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            z-index: 10;
+        }
+
+        .king_clothes_red {
+            top: 30px;
+            border-bottom: 50px solid red;
+            z-index: 9;
+        }
+
+        #king_clothes_blue {
+            border-bottom: 50px solid blue;
+        }
+
+        #myCrib {
+            float: left;
+            padding-top: 30px;
+        }
+
+        #myStar {
+            width: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px var(--star-color);
+            position: relative;
+        }
+
+        #myStar:after {
+            width: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 50px var(--star-color);
+            position: absolute;
+            content: "";
+            top: 15px;
+            left: -25px;
+        }
+
+        .myStarTail {
+            top: -43px;
+            left: 40px;
+            position: relative;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 200px var(--star-color);
+            -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+            -webkit-animation: fade-in-out 2.5s infinite;
+            animation: fade-in-out 2.5s infinite;
+        }
+
+        #myRoof {
+            width: 0;
+            padding-top: 75px;
+            border-bottom: 40px solid brown;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+        }
+
+        #myHouse {
+            width: 120px;
+            height: 100px;
+            background-color: green;
+            margin-left: 40px;
+        }
+
+        .window {
+            width: 40px;
+            height: 20px;
+            background-color: yellow;
+            margin-top: -80px;
+        }
+
+        #window1 {
+            margin-left: 50px;
+        }
+
+        #window2 {
+            margin-left: 110px;
+        }
+
+        @-webkit-keyframes toright {
+            from {
+                margin-top: 200px;
+                margin-left: 0px;
+            }
+
+            to {
+                margin-top: 200px;
+                margin-left: 200px;
+            }
+        }
+
+        @keyframes toright {
+            from {
+                margin-top: 200px;
+                margin-left: 0px;
+            }
+
+            to {
+                margin-top: 200px;
+                margin-left: 200px;
+            }
+        }
+
+        /*FADE IN-OUT*/
+        @-webkit-keyframes fade-in-out {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in-out {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="scene">
+        <div id="threeKings" class="float_left">
+            <div class="king animate">
+                <div class="crown_left float_left"></div>
+                <div class="crown_middle float_left"></div>
+                <div class="crown_left flip_2_right float_left"></div>
+                <div class="king_head pos_abs"></div>
+                <div class="king_clothes pos_abs"></div>
+                <div class="king_clothes pos_abs king_clothes_red"></div>
+            </div>
+            <div class="king animate" id="myKing2">
+                <div class="crown_left float_left crown_side_color"></div>
+                <div class="crown_middle float_left" id="kmiddle2"></div>
+                <div class="crown_left flip_2_right float_left crown_side_color"></div>
+                <div class="king_head pos_abs" id="myKing2Head"></div>
+                <div class="king_clothes pos_abs" id="king_clothes_blue"></div>
+                <div class="king_clothes pos_abs king_clothes_red"></div>
+            </div>
+            <div class="king animate" id="myKing3">
+                <div class="crown_left float_left"></div>
+                <div class="crown_middle float_left"></div>
+                <div class="crown_left flip_2_right float_left"></div>
+                <div class="king_head pos_abs"></div>
+                <div class="king_clothes pos_abs"></div>
+                <div class="king_clothes pos_abs king_clothes_red"></div>
+            </div>
+        </div>
+        <div id="myCrib">
+            <div id="myStar"></div>
+            <div class="myStarTail"></div>
+            <div class="myStarTail"></div>
+            <div class="myStarTail"></div>
+            <div id="myRoof"></div>
+            <div id="myHouse"></div>
+            <div class="window float_left" id="window1"></div>
+            <div class="window" id="window2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

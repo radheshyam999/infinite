@@ -1,7 +1,7 @@
 
 function FormValidation() {
-    var UserEmailPhone=document.getElementById("idintity");
-    var UserPasswd= document.getElementById("password");
+     UserEmail = document.forms["SignUpForm"]["Email"].value;
+    UserMobNumber = document.forms["SignUpForm"]["MobNumber"].value;
       if (UserEmailPhone && UserPasswd) {
          return true; 
       }
@@ -12,5 +12,13 @@ function FormValidation() {
 
     
 }
+
+
+
+
+
+
+
+
 
 

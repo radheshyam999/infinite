@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>infinite</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>infinite</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon"  type="text/image" sizes="16*16" href="img/pie3.gif">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,6 +14,7 @@
     <script src="js/inf.js"></script>
     <script src="js/infJQ.js"></script>
     <script src="js/inf2.js"></script>
+    <script src="js/NameCode.json"></script>
 </head>
 <body onload="myFunction()" style="margin:0;">
     <div id="loader">
@@ -28,16 +29,16 @@
         </div>
        <div class="col-sm-5 col-md-5 col-xs-12 col-lg-5">
 
-          <form action="#php">
+          <form  name ="SignUpForm"action="#php">
            <div id ="SignUp">
              <div class = "div-Border">               <h1>Infinite</h1>
                 <p>Sign up to see more Information about word.</p>
-             <input type="text" id="fname" name="fname" placeholder="Enter your Name" requried>
-             <input type="text" id="EmailCellNumber" name="Email" placeholder="Enter Email" requried>
-             <input type="text"  name="Email" placeholder="Mobile Number " requried>
-             <input type="text" id="password" name="Username" placeholder="Username" requried>
-             <input type="text" id="cpassword" name="password" placeholder="Password" requried>
-             <input type="text" id="lname" name="password" placeholder="Confirm Password" requried>
+             <input type="text" id="fname" name="fname" placeholder="Enter your Name" maxlength="15" requried>
+             <input type="email"  name="Email" placeholder="Enter Email" maxlength="15" requried>
+             <input type="text"  name="MobNumber" placeholder="Mobile Number " maxlength="10" requried>
+             <input type="text"  name="Username" placeholder="Username" maxlength="12" requried>
+             <input type="password"  name="password" placeholder="Password" maxlength="15" requried>
+             <input type="password"  name="password" placeholder="Confirm Password" maxlength="15" requried>
              <button type="button" class="btn btn-primary btn-sm btn-block">Sign up</button>
              <p>By signing up, you agree to our
              <b><a href="#" >Terms</a> , <a href="#">Data Policy</a></b> and <b><a href="#">Cookies

@@ -65,10 +65,46 @@ input[type=text]:focus {
   background-color: lightblue;
 
 }
-/*input [type=image] {
+input[type=Password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+  border-radius: 4px;
+  /* this thin  for  input  desgning */
+
+}
+
+input[type=Passsword]:focus {
+  background-color: lightblue;
 
 
-}*/
+}
+
+
+input[type=Email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+  border-radius: 4px;
+  /* this thin  for  input  desgning */
+
+}
+
+input[type=Email]:focus {
+  background-color: lightblue;
+
+}
+
+
+
 #SignUp {
     margin: 30px;
     padding: 30px;
