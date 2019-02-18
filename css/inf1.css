@@ -17,16 +17,47 @@
   background-position-y: center;
   background-position-x: center;
   }
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+
+  #SignUp {
+    margin: 30px;
+    padding: 30px;
+    top: 20px;
+    background-color: #f8f8f8ea;
+
+  }
+
+  #Login {
+    margin: 30px;
+    padding: 30px;
+    top: 20px;
+    background-color: #f8f8f8ea;
+
+  }
 
   #loader{
   position: absolute;
   background-position-y: center;
   background-position-x: center;
   }
+
+
+
+  #SignUp {
+    margin: 30px;
+    padding: 30px;
+    top: 20px;
+    background-color: #f8f8f8ea;
+
+  }
+  #Login {
+    margin: 30px;
+    padding: 30px;
+    top: 20px;
+    background-color: #f8f8f8ea;
+
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -38,6 +69,23 @@
   background-position-y: center;
   background-position-x: center;
   }
+
+
+  #SignUp {
+    margin: 30px;
+    padding: 30px;
+    top: 20px;
+    background-color: #f8f8f8ea;
+
+  }
+  #Login {
+    margin: 30px;
+    padding: 30px;
+    top: 20px;
+    background-color: #f8f8f8ea;
+
+  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -49,6 +97,22 @@ top: 43%;
 left:43%;
 }
 
+#SignUp {
+  margin: 30px;
+  padding: 30px;
+  top: 20px;
+  background-color: #f8f8f8ea;
+
+}
+#Login {
+  margin: 30px;
+  padding: 30px;
+  top: 20px;
+  background-color: #f8f8f8ea;
+
+}
+
+
 }
 
 #footer {
@@ -57,9 +121,10 @@ left:43%;
    bottom: 0;
    width: 100%;
    background-color: rgb(5, 16, 54);
-   color: rgb(95, 18, 18);
+   
    text-align: center;
    opacity: 0.5;
+   color: black;
 
 }
 

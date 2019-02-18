@@ -105,20 +105,7 @@ input[type=Email]:focus {
 
 
 
-#SignUp {
-    margin: 30px;
-    padding: 30px;
-    top: 20px;
-    background-color: #f8f8f8ea;
- 
-}
-#Login {
-    margin: 30px;
-    padding: 30px;
-    top: 20px;
-    background-color: #f8f8f8ea;
-                                                                                                   
-}
+
 
  .div-Border {    /* this is for  formm for looknh */             
     padding: 20px;

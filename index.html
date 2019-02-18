@@ -14,7 +14,7 @@
     <script src="js/inf.js"></script>
     <script src="js/infJQ.js"></script>
     <script src="js/inf2.js"></script>
-    <script src="js/NameCode.json"></script>
+    
 </head>
 <body onload="myFunction()" style="margin:0;">
     <div id="loader">
@@ -29,17 +29,18 @@
         </div>
        <div class="col-sm-5 col-md-5 col-xs-12 col-lg-5">
 
-          <form  name ="SignUpForm"action="#php">
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
            <div id ="SignUp">
              <div class = "div-Border">               <h1>Infinite</h1>
-                <p>Sign up to see more Information about word.</p>
-             <input type="text" id="fname" name="fname" placeholder="Enter your Name" maxlength="15" requried>
-             <input type="email"  name="Email" placeholder="Enter Email" maxlength="15" requried>
-             <input type="text"  name="MobNumber" placeholder="Mobile Number " maxlength="10" requried>
-             <input type="text"  name="Username" placeholder="Username" maxlength="12" requried>
-             <input type="password"  name="password" placeholder="Password" maxlength="15" requried>
-             <input type="password"  name="password" placeholder="Confirm Password" maxlength="15" requried>
-             <button type="button" class="btn btn-primary btn-sm btn-block">Sign up</button>
+              <p>Sign up to see more Information about word.</p>
+             <input type="text" id="fgname" name="fname" placeholder="Enter your Name" maxlength="15" requried>
+             <input type="email"  id="SignUpEmail" placeholder="Enter Email" maxlength="15" requried>
+<input type="text" id="SignUpMobNumber" placeholder="Mobile Number " maxlength="10" onkeypress="return isNumber(event)"
+  requried>
+             <input type="text"  ="Username" placeholder="Username" maxlength="12" requried>
+             <input type="password"  id="SignUppassword" placeholder="Password" maxlength="15" requried>
+             <input type="password" id="SignUpcpassword" placeholder="Confirm Password" maxlength="15" requried>
+<button type="submit" class="btn btn-primary btn-sm btn-block" onclick="ValidateNo();">Sign up</button>
              <p>By signing up, you agree to our
              <b><a href="#" >Terms</a> , <a href="#">Data Policy</a></b> and <b><a href="#">Cookies
               Policy</a> </b></p>
@@ -61,7 +62,7 @@
               <p>Sign up to see more Information about word.</p>
               <input type="text" id="idintity" name="ideintity" placeholder="Mobile Number or Email Username" requried>
               <input type="text" id="password" name="password" placeholder="Password" requried>
-              <button type="button"  class="btn btn-primary btn-sm btn-block">Login</button>
+              <button type="submit"  class="btn btn-primary btn-sm btn-block">Login</button>
               <a href="#">Forgot password?</a>
              </div>
              <div class="div-Border">
