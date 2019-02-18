@@ -5,18 +5,18 @@ function validateForm() {
   UsercPassword = document.getElementById("SignUpcpassword").value;
    Email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   
-  if ( UserPassword > 8 && UserPassword === UsercPassword) {
-      if (Email.test(SignUpEmail.value) == false) {
-        alert("leren  here ");
+  if (UserPassword.length > 8 && UserPassword == UsercPassword && Email.test(SignUpEmail.value) == true) {
+    
        return true;
-      }
-      else{
+    }
+      
+  else{
         
         return false;
       } 
   }
  
-} 
+
 
 
 
