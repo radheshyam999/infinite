@@ -1,13 +1,15 @@
 <?php
-$servername = "localhost";
-$usernsme = "root";
-$password = "2431923";
-$dbname  = "infinite";
-     
+class DatabaseConnection {
+   public $con;
+  public $servername = "localhost";
+  public $usernsme = "root";
+  public $password = "2431923";
+   public $dbname = "infinite";
+ 
+}
 
-   $conn = mysqli_connect($servername, $usernsme, $password, $dbname);
-   if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-   }
-echo "Connected successfully";
+$Datast =new DatabaseConnection();
+
+echo($Datast ->servername);
+   
  ?>
