@@ -1,11 +1,11 @@
 $(document).ready(function(){
 $("#ShowLogin").click(function() {
-  $("#Login").show();
-  $("#SignUp").hide();
+  $("#Login").show(); //  it will show hide element  for login  
+  $("#SignUp").hide(); // hiding  sinnup when you click on login link
 });
 $("#HideLogin").click(function () {
-  $("#Login").hide();
-  $("#SignUp").show();
+  $("#Login").hide(); //  hiding  Login when you click on login link
+  $("#SignUp").show(); // it will show hide element  for login 
 });
 
 });
