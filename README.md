@@ -1,5 +1,3 @@
-can control 
-this project basically a form  like Instgram 
-pleas check than you ll know that how is project  // 
-withe help of html css javascript and boostarp  // 
-
+this  project developed with help html css javascript jqurey
+  this is form for like instgram 
+  it is responsive and form is  fully validatable 
