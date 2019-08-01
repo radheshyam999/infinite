@@ -1,12 +1,12 @@
 function validateForm() {
-  UserEmail = document.getElementById("SignUpEmail").value;
-  UserMob = document.getElementById("SignUpMobNumber").value;
-  UserPassword = document.getElementById("SignUppassword").value;
-  UsercPassword = document.getElementById("SignUpcpassword").value;
-   Email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  UserEmail = document.getElementById("SignUpEmail").value;   // geting the value  usear email
+  UserMob = document.getElementById("SignUpMobNumber").value; // grting  Usee  mob number here 
+  UserPassword = document.getElementById("SignUppassword").value;  //  geting password  here
+  UsercPassword = document.getElementById("SignUpcpassword").value; // geting  confirm password here 
+   Email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;   // it is for email  validation //
   
   if (UserPassword.length > 8 && UserPassword == UsercPassword && Email.test(SignUpEmail.value) == true) {
-    
+/*   validating   data here  if it is true form going to submit otherwise  it will throw erre*/
        return true;
     }
       
@@ -21,7 +21,7 @@ function validateForm() {
 
 
 
-function isNumber(evt) {
+function isNumber(evt) {    //function ber in form of mobile number for only enter num/ 
   evt = (evt) ? evt : window.event;
   var charCode = (evt.which) ? evt.which : evt.keyCode;
   if (charCode > 31 && (charCode < 48 || charCode > 57)) {

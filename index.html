@@ -29,18 +29,17 @@
         </div>
        <div class="col-sm-5 col-md-5 col-xs-12 col-lg-5">
 
-<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+<form name="myForm" action="SignUpControl" onsubmit="validateForm()" method="GET">
            <div id ="SignUp">
              <div class = "div-Border">               <h1>Infinite</h1>
               <p>Sign up to see more Information about word.</p>
-             <input type="text"  name="fname" placeholder="Enter your Name" maxlength="15" requried>
-             <input type="email"  id = "SignUpEmail" placeholder="Enter Email" maxlength="15" requried>
-            <input type="text" id = "SignUpMobNumber" placeholder="Mobile Number " maxlength="10" onkeypress="return isNumber(event)"
-  requried>
-             <input type="text"  ="Username" placeholder="Username" maxlength="12" requried>
-             <input type="password"  id = "SignUppassword" placeholder="Password" maxlength="15" requried>
-             <input type="password" id = "SignUpcpassword" placeholder="Confirm Password" maxlength="15" requried>
-<button type="submit" class="btn btn-primary btn-sm btn-block" onclick="ValidateNo();">Sign up</button>
+             <input type="text"  name="Name" placeholder="Enter your Name" maxlength="15" requried>
+             <input type="email" name="email" id="SignUpEmail" placeholder="Enter Email" maxlength="15" requried>
+            <input type="text" name="MobileNumber" id = "SignUpMobNumber" placeholder="Mobile Number " maxlength="10" onkeypress="return isNumber(event)"requried>
+             <input type="text" name ="Username" placeholder="Username" maxlength="12" requried>
+             <input type="password" name="password"  id = "SignUppassword" placeholder="Password" maxlength="15" requried>
+             <input type="password"name="repassword"  id = "SignUpcpassword" placeholder="Confirm Password" maxlength="15" requried>
+            <input type="submit" class="btn btn-primary btn-sm btn-block" onclick="ValidateNo();" value="Sign up">
              <p>By signing up, you agree to our
              <b><a href="#" >Terms</a> , <a href="#">Data Policy</a></b> and <b><a href="#">Cookies
               Policy</a> </b></p>
@@ -53,7 +52,7 @@
              <input type="image" src="img/andriod.png" alt="Submit" width="100" height="50">
              <input type="image" src="img/apple.png" alt="Submit" width="100" height="50">
            </div>
-          </form>
+    </form>
           <form action="#php">
            <div id ="Login" style="display:none;">
              <div class="div-Border">
@@ -80,7 +79,9 @@
 
    </div>
    <div id = "footer">
-    <p>&copy; 2019 Infinite.in</p>
+    <div class="footer">
+      <p><Span class="copyrightSign">&copy;</Span>2019,INFINIT,</p>
+    </div>
 </div>
 
 
